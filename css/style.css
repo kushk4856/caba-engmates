@@ -781,6 +781,10 @@ Guarantee Section
     width: 50%;
 }
 
+.placement_inner .para  h3 {
+    font-weight: 400;
+}
+
 .placement_inner .para p {
     color: #000000C2;
     font-family: "Open Sans", Sans-serif;
@@ -1024,7 +1028,8 @@ job section
 }
 
 .course-card {
-    /* border: 1px solid #ccc; */
+    flex: 0 0 calc(33.3% - 25px);
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
     /* margin: 20px; */
@@ -1033,9 +1038,11 @@ job section
     background-color: #fff;
     text-align: center;
     position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
 }
 
-/* .course-card::after {
+.course-card::after {
     position: absolute;
     content: '';
     transform: translateX(-50%);
@@ -1045,19 +1052,20 @@ job section
     margin: auto;
     height: 4px;
     background-color: #00d3ca;
-} */
+}
 
 .course-card img {
     /* width: 200px; */
+    height: 200px;
     border-radius: 5px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    height: 430px;
-    border-radius: 20px;
+    /* height: 430px; */
+    /* border-radius: 20px; */
 
 }
 
 .course-card .card_content {
     margin-top: 40px;
+    /* text-align: left; */
 }
 
 .course-card h2 {
@@ -1373,8 +1381,8 @@ job section end
     background: white;
     transition: top 0.3s ease-in-out;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-height: 80vh;
-    overflow-y: auto;
+    max-height: 100vh;
+    
     border-radius: 5px;
     height: 0px;
     transition: all .3s ease;
@@ -1428,3 +1436,118 @@ nav .nav-link.header-style {
     display: none;
 }
 
+
+/* ==================engmates footer================== */
+.content_area {
+    width: 100%;
+    background-color: #F2eFea;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.content_area li {
+    list-style: none;
+}
+
+.left-area {
+    width: 320px;
+}
+
+.center-area {
+    padding-bottom: 10px;
+}
+
+
+.right-area {
+    width: 407px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-area .image {
+    width: 100%;
+    margin-top: 25px;
+}
+.left-area p {
+    color: #707070;
+    font-size: 16px;
+    font-family: Nunito;
+    text-align: justify;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.content_area h4 {
+    color: #444444;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: Nunito;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.center-area .address {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-area .address div {
+    display: flex;
+    align-items: center;
+    width: 310px;
+    gap: 20px;
+}
+
+.right-area .input {
+    width: 100% !important;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0.5rem;
+    font-family: Nunito;
+    font-size: 18px;
+    background-color: #fff;
+    font-weight: 500;
+    border: 2px solid #707070;
+    border-radius: 2px;
+    color: #000;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+.right-area button {
+    width: 100%;
+    background: #A67B5B;
+    font-family: Nunito;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    /* outline: none; */
+    color: white;
+    cursor: pointer;
+}
+
+
+.center-area .address div li h5 {
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-family: Nunito;
+    color: #444444;
+}
+
+.center-area .address div li {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #49b5e7;
+}
