@@ -1,0 +1,370 @@
+
+@media screen and (max-width: 992px) {
+    .course-card {
+        /*  to show 2 cards  */
+        flex: 0 0 calc(50% - 19px);
+        max-width: calc(50% - 19px);
+    }
+    
+    .carousel-slider-container {
+        padding-inline: 20px;
+    }
+    
+    .carousel-track {
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    .logo{
+        width: auto;
+    }
+
+    .nav-menu.active {
+        display: block;
+        height: 400px;
+    }
+    .guarantee_inner, #footer, #job, .courses_inner, .placement_inner{
+        padding: 10px;
+    }
+    .guarantee_inner {
+        padding-inline: 40px;
+    }
+    .banner_heading h1{
+        /* font-size: 90px; */
+        font-size: 54px;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    
+    .banner_sub_heading{
+        margin-top: 90px;
+        
+        
+    }
+    .banner_sub_heading h2{
+        font-size: 95px;
+        line-height: 1;
+    }
+
+    .banner_text_block {
+        padding-right: 0px;
+    }
+
+    .footer_wrapper{
+        width: 100%;
+    }
+    .footer_inner{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer_inner .working_hours{
+        width: fit-content;
+        max-width: fit-content;
+    }
+    .video_container video {
+        width: 100%;
+        
+    }
+
+    .about_inner{
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .form-container{
+        width: 80%; /* as per engmates */
+    }
+
+    .about_left_block{
+        width: 80%;
+    }
+ 
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .course-card {
+        /* Show 1 card */
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+    
+    .carousel-slider-container {
+        padding-inline: 15px;
+    }
+    
+    .carousel-track {
+        gap: 20px;
+    }
+    
+    .carousel-nav-button {
+        padding: 10px 8px;
+    }
+    .form-container{
+        width: 100%;
+    }
+
+    .video_container video {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 425px) {
+    
+    .banner_block {
+        flex-direction: column;
+        height: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+
+    .banner_text_block {
+        padding-right: 0px;
+        width: 100%;
+
+    }
+
+    .job_inner .heading h4{
+        font-size: 35px;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+    }
+
+    .about_courses{
+        padding-inline: 10px;
+    }
+    .placement_inner .placement_left .placement_heading h4{
+        font-size: 35px;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+    }
+
+    
+
+    
+    .banner_heading h1{
+        /* font-size: 80px; */
+
+
+        text-align: center;
+    }
+  
+    
+
+    .banner_heading {
+        padding: 0px 2px 0px 1px;
+        text-align: center;
+    }
+
+    .banner_sub_heading {
+        padding: 21px 0px 9px 0px;
+
+    }
+
+    /* -------------about section -----------  */
+    .about_inner {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about_left_block {
+        width: 100%;
+    }
+
+    .about_right_block {
+        width: 100%;
+    }
+
+    .about_right_block .para {
+        text-align: center;
+    }
+
+    /* -------------- courses ------------  */
+    .about_courses {
+        flex-direction: column;
+        padding-inline: 10px;
+        gap: 10px;
+    }
+
+    .about_courses>div {
+        width: 100% !important;
+    }
+
+    .about_courses .left_content {
+        margin-right: 0px;
+    }
+
+    .about_courses .right_content {
+        margin-left: 0px;
+    }
+
+    .box_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center_img img {
+        margin-block: 50px;
+    }
+
+    .guarantee_inner {
+        flex-direction: column;
+        padding-inline: 10px;
+    }
+
+    .guarantee_inner>div {
+        width: 100%;
+        padding-inline: 5px;
+        text-align: center;
+
+    }
+
+    .guarantee_right_block .badge_img {
+        padding-block: 10px;
+    }
+
+    /* -----------placement -----------  */
+    .placement_inner .main_content {
+        flex-direction: column;
+        padding-inline: 10px;
+    }
+
+    .placement_inner .main_content>div {
+        width: 100%;
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+    .carousel-track{
+        padding-inline: 30px;
+    }
+
+    .card_slider{
+        padding-inline: 80px;
+    }
+
+    /* -----------footer -------------  */
+    .footer_inner {
+        flex-direction: column;
+        padding-inline: 10px;
+        /* text-align: center; */
+        gap: 10px;
+    }
+
+    .footer_inner>div {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .footer_inner ul li {
+        width: 60%;
+    }
+    .carousel-next{
+        right: 14px;
+    }
+}
+
+@media (max-width: 425px){
+    .banner_sub_heading h2{
+        font-size: 80px;
+        text-align: center;
+    }
+   
+    .banner_sub_heading h2 {
+        font-size: 57px;
+    }
+
+  
+    .card_slider{
+
+        padding-inline: 0px;
+    }
+    .carousel-track {
+        padding-inline: 0px;
+        /* gap: 50px; */
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .about_left_block , .about_right_block {
+        padding: 10px;
+    }
+    #courses{
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    .guarantee_left_block .heading h4{
+        font-size: 38px;
+    }
+    .guarantee_inner .para{
+        padding: 10px;
+    }
+    .placement_inner .para {
+        padding: 10px;
+    }
+
+    .placement_inner .card {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+
+    .main-slider{
+        aspect-ratio: unset;
+        height: 300px;
+    }
+    .carousel-prev {
+        left: 10px;
+    }
+    .carousel-next {
+        right: 0px;
+    }
+    .footer_inner .contact {
+        max-width: 50% !important;
+    }
+
+    .footer_inner .location  {
+        max-width: 50% !important;
+    }
+    .footer_wrapper{
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+    }
+
+    .placement_right{
+        padding-top: 40px;
+    }
+
+    .banner_sub_heading {
+        margin-top: 0px;
+    }
+
+    .banner_heading h1 {
+        font-size: 40px;
+    }
+
+    .slider_block{
+        padding: 0;
+    }
+
+
+}
