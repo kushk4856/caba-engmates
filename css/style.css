@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--font-OpenSans) !important;
 
 }
@@ -166,7 +166,8 @@ reusable code end
     text-decoration: none;
     color: #333;
 }
-.nav-item a{
+
+.nav-item a {
     text-decoration: none;
 }
 
@@ -179,6 +180,7 @@ reusable code end
     display: inline-block;
     transition: 0.1s all ease-in-out;
 }
+
 .nav-item a.register-now:hover {
     background: linear-gradient(to right, #fcae36 0, #ff9100 100%);
     color: #fff;
@@ -329,9 +331,10 @@ hero section start
 .banner_heading h1 {
     color: #FFD725;
     /* font-size: 122px; */
-    font-size: 84px; /* as per engmates */
+    font-size: 84px;
+    /* as per engmates */
     text-transform: uppercase;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
+    text-shadow: 0px 0px 5px #000000;
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -346,9 +349,12 @@ hero section start
 .banner_sub_heading h2 {
     color: #fff5c8;
     font-family: "Oswald", Sans-serif;
-    font-size: 108px;
+    font-size: 70px;
     font-weight: 800;
+    line-height: 1;
     width: 100%;
+    margin-top: 22px;
+    
     text-transform: uppercase;
     text-shadow: 11px 11px 10px rgba(0, 0, 0, 0);
 }
@@ -356,7 +362,8 @@ hero section start
 
 /* ********** form hero ********** */
 .form-container {
-    width: 50%; /* as per engmates */
+    width: 50%;
+    /* as per engmates */
     max-width: 300px;
     background-color: #000000;
     border-radius: 8px;
@@ -474,9 +481,11 @@ hero section start
     max-width: 1140px;
     margin: auto;
     /* gap: 4px; */
-    gap: 64px; /* as per engmates */
-    /* align-items: self-start; */ /* as per engmates */
-    
+    gap: 64px;
+    /* as per engmates */
+    /* align-items: self-start; */
+    /* as per engmates */
+
 
 }
 
@@ -492,7 +501,7 @@ hero section start
     width: 57%;
 }
 
-.video_container{
+.video_container {
     border-radius: 30px;
 }
 
@@ -653,20 +662,18 @@ Guarantee Section
  */
 
 #guarantee {
-    margin-top: 40px;
-    background-color: #6A4ADC;
+    margin-top: 0px;
+    background: #f4f4f4;
     color: #fff;
-    padding-block: 40px;
 }
 
 .guarantee_inner {
     max-width: 1140px;
     margin: auto;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     /* padding-top: 10px; */
-    padding: 10px;
+    /* padding: 10px; */
     width: 100%;
 }
 
@@ -774,14 +781,14 @@ Guarantee Section
     font-size: 44px;
     font-weight: 400;
     text-transform: uppercase;
-   
+
 }
 
 .placement_inner .placement_right {
     width: 50%;
 }
 
-.placement_inner .para  h3 {
+.placement_inner .para h3 {
     font-weight: 400;
 }
 
@@ -1225,8 +1232,7 @@ job section end
 .footer_wrapper {
     flex-direction: row !important;
     justify-content: space-between !important;
-    gap: 20px
-    ;
+    gap: 20px;
     width: 37%;
 }
 
@@ -1312,8 +1318,8 @@ job section end
 
 /* --------next slider ----------  */
 
- /* Base styles */
- .carousel-slider-container {
+/* Base styles */
+.carousel-slider-container {
     overflow: hidden;
     position: relative;
     padding-block: 10px;
@@ -1376,13 +1382,13 @@ job section end
 }
 
 .nav-menu {
-  display: none;
+    display: none;
     width: 100%;
     background: white;
     transition: top 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-height: 100vh;
-    
+
     border-radius: 5px;
     height: 0px;
     transition: all .3s ease;
@@ -1432,6 +1438,7 @@ nav .nav-link.header-style {
 .chevron.up {
     transform: rotate(-135deg);
 }
+
 .menu-toggle {
     display: none;
 }
@@ -1471,10 +1478,11 @@ nav .nav-link.header-style {
     width: 100%;
     margin-top: 25px;
 }
+
 .left-area p {
     color: #707070;
     font-size: 16px;
-    font-family: Nunito;
+  
     text-align: justify;
     margin-left: 0px;
     margin-top: 10px;
@@ -1486,7 +1494,7 @@ nav .nav-link.header-style {
     color: #444444;
     margin-top: 20px;
     font-size: 24px;
-    font-family: Nunito;
+  
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -1508,21 +1516,20 @@ nav .nav-link.header-style {
     box-sizing: border-box;
     height: 45px;
     padding: 0.5rem;
-    font-family: Nunito;
     font-size: 18px;
     background-color: #fff;
     font-weight: 500;
     border: 2px solid #707070;
     border-radius: 2px;
     color: #000;
-    font-family: Nunito;
+  
     font-size: 16px;
 }
 
 .right-area button {
     width: 100%;
     background: #A67B5B;
-    font-family: Nunito;
+  
     margin-top: 15px;
     padding: 10px;
     font-size: 16px;
@@ -1537,7 +1544,7 @@ nav .nav-link.header-style {
 .center-area .address div li h5 {
     margin-bottom: 1px;
     font-size: 20px;
-    font-family: Nunito;
+    font-weight: 500;
     color: #444444;
 }
 
@@ -1556,7 +1563,7 @@ a {
 /* -----------------swiper whatsApp section -------  */
 
 .white_block {
-    background: #fff;
+    background: #6A4ADC;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -1567,12 +1574,99 @@ a {
 
 
 .brown_heading {
-    color: #b79d74;
+    color: #ffcc35;
     font-size: 40px;
     margin-bottom: 30px;
-    font-family: Nunito;
     font-weight: 600;
 }
+
+
+
+#student-feedback{
+    overflow: hidden;
+}
+
+
+
+
+/* ----------- SLIDER ------------ */
 .swiper {
     width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: fit-content;
+    height: 90%;
+    background-color: #00000000;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    /* padding: 2em 1em; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    filter: blur(1px);
+}
+
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card img {
+    border-radius: inherit;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: transparent;
+    /* Make the background transparent */
+    border: none;
+    font-size: 2rem;
+    color: #fcae36;
+    /* Set icon color to #fcae36 */
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    left: 10px;
+    /* Position the left button */
+}
+
+.swiper-button-next {
+    right: 10px;
+    /* Position the right button */
+}
+
+/* Adjust hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #fcae36;
+    transform: scale(1.2);
+    /* Optional: Add some scaling effect on hover */
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '';
 }
