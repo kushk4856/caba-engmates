@@ -474,7 +474,9 @@ hero section start
   */
 
 #about {
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #f4f4f4;
 }
 
 .about_inner {
@@ -524,7 +526,7 @@ hero section start
 .about_right_block h4 {
     color: #E81B62;
     font-family: "Open Sans Hebrew", Sans-serif;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -572,7 +574,7 @@ hero section start
 .courses_inner .heading h3 {
     color: #4756B0;
     font-family: "Bai Jamjuree", Sans-serif;
-    font-size: 25px;
+    font-size: 29px;
     font-weight: 500;
     text-transform: uppercase;
     -webkit-text-stroke-width: 0px;
@@ -606,6 +608,8 @@ hero section start
     font-family: "Open Sans", Sans-serif;
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 10px;
+
 }
 
 .box_wrapper .contents .text {
@@ -1669,4 +1673,13 @@ a {
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     content: '';
+}
+
+
+
+
+/*? Fix  */
+
+.fix-padding{
+    padding-left: 0 !important;
 }
