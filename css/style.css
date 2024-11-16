@@ -1528,6 +1528,11 @@ nav .nav-link.header-style {
     font-weight: 500;
 }
 
+.phone_call,
+.email_id {
+    color: #007BFF;
+}
+
 .right-area .input {
     width: 100% !important;
     box-sizing: border-box;
