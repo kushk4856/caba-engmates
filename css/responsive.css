@@ -1,15 +1,14 @@
-
 @media screen and (max-width: 992px) {
     .course-card {
         /*  to show 2 cards  */
         flex: 0 0 calc(50% - 19px);
         max-width: calc(50% - 19px);
     }
-    
+
     .carousel-slider-container {
         padding-inline: 20px;
     }
-    
+
     .carousel-track {
         gap: 30px;
     }
@@ -17,9 +16,9 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .logo{
+    .logo {
         width: auto;
     }
 
@@ -27,26 +26,34 @@
         display: block;
         height: 400px;
     }
-    .guarantee_inner, #footer, #job, .courses_inner, .placement_inner{
+
+    .guarantee_inner,
+    #footer,
+    #job,
+    .courses_inner,
+    .placement_inner {
         padding: 10px;
     }
+
     .guarantee_inner {
         padding-inline: 40px;
     }
-    .banner_heading h1{
+
+    .banner_heading h1 {
         /* font-size: 90px; */
         font-size: 54px;
         text-align: left;
         line-height: 1.2;
     }
 
-    
-    .banner_sub_heading{
+
+    .banner_sub_heading {
         margin-top: 90px;
-        
-        
+
+
     }
-    .banner_sub_heading h2{
+
+    .banner_sub_heading h2 {
         font-size: 95px;
         line-height: 1;
     }
@@ -55,35 +62,39 @@
         padding-right: 0px;
     }
 
-    .footer_wrapper{
+    .footer_wrapper {
         width: 100%;
     }
-    .footer_inner{
+
+    .footer_inner {
         flex-wrap: wrap;
         gap: 20px;
     }
-    .footer_inner .working_hours{
+
+    .footer_inner .working_hours {
         width: fit-content;
         max-width: fit-content;
     }
+
     .video_container video {
         width: 100%;
-        
+
     }
 
-    .about_inner{
+    .about_inner {
         padding: 10px;
         flex-direction: column;
     }
 
-    .form-container{
-        width: 80%; /* as per engmates */
+    .form-container {
+        width: 80%;
+        /* as per engmates */
     }
 
-    .about_left_block{
+    .about_left_block {
         width: 80%;
     }
- 
+
     .content_area {
         padding-inline: 120px;
         flex-direction: column-reverse;
@@ -111,37 +122,41 @@
         margin-bottom: 20px;
     }
 
-    .placement_inner .main_content{
+    .placement_inner .main_content {
         flex-direction: column;
         gap: 40px;
     }
-    .placement_inner .main_content> div {
+
+    .placement_inner .main_content>div {
         width: auto;
     }
-    .placement_inner{
-padding-inline: 40px;    }
+
+    .placement_inner {
+        padding-inline: 40px;
+    }
 
 }
 
 @media screen and (max-width: 576px) {
     .course-card {
         /* Show 1 card */
-        flex: 0 0 100%; 
+        flex: 0 0 100%;
         max-width: 100%;
     }
-    
+
     .carousel-slider-container {
         padding-inline: 15px;
     }
-    
+
     .carousel-track {
         gap: 20px;
     }
-    
+
     .carousel-nav-button {
         padding: 10px 8px;
     }
-    .form-container{
+
+    .form-container {
         width: 100%;
     }
 
@@ -179,23 +194,24 @@ padding-inline: 40px;    }
     }
 
     .course-card img {
-        width: 200px;
+        width: 240px;
     }
-    .banner_block{
+
+    .banner_block {
         flex-direction: column;
     }
 }
 
 
 @media (max-width: 576px) {
-    
+
     .banner_block {
         flex-direction: column;
         height: auto !important;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .menu-toggle {
@@ -210,32 +226,33 @@ padding-inline: 40px;    }
 
     }
 
-    .job_inner .heading h4{
+    .job_inner .heading h4 {
         font-size: 35px;
         line-height: 1.3em;
         letter-spacing: 1px;
     }
 
-    .about_courses{
+    .about_courses {
         padding-inline: 10px;
     }
-    .placement_inner .placement_left .placement_heading h4{
+
+    .placement_inner .placement_left .placement_heading h4 {
         font-size: 35px;
         line-height: 1.3em;
         letter-spacing: 1px;
     }
 
-    
 
-    
-    .banner_heading h1{
+
+
+    .banner_heading h1 {
         /* font-size: 80px; */
 
 
         text-align: center;
     }
-  
-    
+
+
 
     .banner_heading {
         padding: 0px 2px 0px 1px;
@@ -323,11 +340,11 @@ padding-inline: 40px;    }
         padding-inline: 10px;
     }
 
-    .carousel-track{
+    .carousel-track {
         padding-inline: 30px;
     }
 
-    .card_slider{
+    .card_slider {
         padding-inline: 80px;
     }
 
@@ -347,52 +364,59 @@ padding-inline: 40px;    }
     .footer_inner ul li {
         width: 60%;
     }
-    .carousel-next{
+
+    .carousel-next {
         right: 14px;
     }
 
-    .placement_inner{
+    .placement_inner {
         padding-inline: 10px;
     }
 }
 
-@media (max-width: 425px){
-    .banner_sub_heading h2{
+@media (max-width: 425px) {
+    .banner_sub_heading h2 {
         font-size: 80px;
         text-align: center;
     }
-   
+
     .banner_sub_heading h2 {
         font-size: 57px;
     }
 
-  
-    .card_slider{
+
+    .card_slider {
 
         padding-inline: 0px;
     }
+
     .carousel-track {
         padding-inline: 0px;
         /* gap: 50px; */
     }
-    .nav-container{
+
+    .nav-container {
         flex-direction: column;
     }
 
-    .about_left_block , .about_right_block {
+    .about_left_block,
+    .about_right_block {
         padding: 10px;
     }
-    #courses{
+
+    #courses {
         margin-top: 0px;
         padding: 10px;
     }
 
-    .guarantee_left_block .heading h4{
+    .guarantee_left_block .heading h4 {
         font-size: 38px;
     }
-    .guarantee_inner .para{
+
+    .guarantee_inner .para {
         padding: 10px;
     }
+
     .placement_inner .para {
         padding: 10px;
     }
@@ -402,30 +426,34 @@ padding-inline: 40px;    }
         max-width: 33.3%;
     }
 
-    .main-slider{
+    .main-slider {
         aspect-ratio: unset;
         height: 300px;
     }
+
     .carousel-prev {
-        left: 10px;
+        left: 0px;
     }
+
     .carousel-next {
         right: 0px;
     }
+
     .footer_inner .contact {
         max-width: 50% !important;
     }
 
-    .footer_inner .location  {
+    .footer_inner .location {
         max-width: 50% !important;
     }
-    .footer_wrapper{
+
+    .footer_wrapper {
         display: flex;
         flex-direction: row !important;
         gap: 10px;
     }
 
-    .placement_right{
+    .placement_right {
         padding-top: 40px;
     }
 
@@ -437,11 +465,11 @@ padding-inline: 40px;    }
         font-size: 70px;
     }
 
-    .slider_block{
+    .slider_block {
         padding: 0;
     }
 
- 
+
 
 
 }

@@ -1,5 +1,4 @@
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -25,68 +24,63 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Pause autoplay on hover
-  var swiperContainer = document.querySelector('.mySwiper');
-  swiperContainer.addEventListener('mouseenter', function () {
+  var swiperContainer = document.querySelector(".mySwiper");
+  swiperContainer.addEventListener("mouseenter", function () {
     swiper.autoplay.stop(); // Stop autoplay when hovering
   });
-  swiperContainer.addEventListener('mouseleave', function () {
+  swiperContainer.addEventListener("mouseleave", function () {
     swiper.autoplay.start(); // Resume autoplay when hover ends
   });
 });
 
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  const dropdownLinks = document.querySelectorAll('.nav-link');
-  const toggleImg = document.getElementById('toggle_img')
-  console.log(toggleImg)
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+  const dropdownLinks = document.querySelectorAll(".nav-link");
+  const toggleImg = document.getElementById("toggle_img");
+  console.log(toggleImg);
 
   // Toggle menu
-  menuToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('active');
-      if(navMenu.classList.contains('active')){
-        toggleImg.src = './images/close.svg'
-      }else{
-        toggleImg.src = './images/more.svg'
-      }
-
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+    if (navMenu.classList.contains("active")) {
+      toggleImg.src = "./images/close.svg";
+    } else {
+      toggleImg.src = "./images/more.svg";
+    }
   });
 
-
-
   // Handle dropdowns
-  dropdownLinks.forEach(link => {
-      const chevron = link.querySelector('.chevron');
-      if (chevron) {
-          link.addEventListener('click', function(e) {
-              e.preventDefault();
-              const dropdownContent = this.nextElementSibling;
-              const isOpen = dropdownContent.classList.contains('active');
-              
-              // Close all dropdowns
-              document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-                  dropdown.classList.remove('active');
-                  const chevron = dropdown.previousElementSibling.querySelector('.chevron');
-                  if (chevron) chevron.classList.remove('up');
-              });
+  dropdownLinks.forEach((link) => {
+    const chevron = link.querySelector(".chevron");
+    if (chevron) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const dropdownContent = this.nextElementSibling;
+        const isOpen = dropdownContent.classList.contains("active");
 
-              // Toggle clicked dropdown
-              if (!isOpen) {
-                  dropdownContent.classList.add('active');
-                  chevron.classList.add('up');
-              }
-          });
-      }
+        // Close all dropdowns
+        document.querySelectorAll(".dropdown-content").forEach((dropdown) => {
+          dropdown.classList.remove("active");
+          const chevron =
+            dropdown.previousElementSibling.querySelector(".chevron");
+          if (chevron) chevron.classList.remove("up");
+        });
+
+        // Toggle clicked dropdown
+        if (!isOpen) {
+          dropdownContent.classList.add("active");
+          chevron.classList.add("up");
+        }
+      });
+    }
   });
 
   // Close menu when clicking outside
-  document.addEventListener('click', function(e) {
-      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-          navMenu.classList.remove('active');
-      }
+  document.addEventListener("click", function (e) {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      navMenu.classList.remove("active");
+    }
   });
 });
 
@@ -198,12 +192,7 @@ document.querySelector(".next").addEventListener("click", () => {
 addCardListeners();
 updateActiveCard(); // Set initial active card
 
-
-
-
 // -------job slider -------
-
-
 
 const track = document.getElementById("carousel-track");
 // let isAnimating = false;
@@ -212,76 +201,80 @@ let pauseAutoSlide = false;
 
 // Function to calculate card width based on viewport
 function getCardWidth() {
-    const viewportWidth = window.innerWidth ;
-    const track = document.getElementById("carousel-track");
-    if (!track.children.length) return 0;
-    
-    return track.children[0].offsetWidth + 
-           (viewportWidth > 992 ? 38 : // Desktop gap
-            viewportWidth > 576 ? 30 : // Tablet gap
-            20); // Mobile gap
+  const viewportWidth = window.innerWidth;
+  const track = document.getElementById("carousel-track");
+  if (!track.children.length) return 0;
+
+  return (
+    track.children[0].offsetWidth +
+    (viewportWidth > 992
+      ? 38 // Desktop gap
+      : viewportWidth > 576
+      ? 30 // Tablet gap
+      : 20)
+  ); // Mobile gap
 }
 
 function moveTrackForward() {
-    if (isAnimating) return;
-    isAnimating = true;
-    const cardWidth = getCardWidth();
-    
-    track.style.transition = "transform 0.5s ease";
-    track.style.transform = `translateX(-${cardWidth}px)`;
-    
-    setTimeout(() => {
-        track.style.transition = "none";
-        track.style.transform = "translateX(0)";
-        track.appendChild(track.children[0]);
-        isAnimating = false;
-    }, 500);
+  if (isAnimating) return;
+  isAnimating = true;
+  const cardWidth = getCardWidth();
+
+  track.style.transition = "transform 0.5s ease";
+  track.style.transform = `translateX(-${cardWidth}px)`;
+
+  setTimeout(() => {
+    track.style.transition = "none";
+    track.style.transform = "translateX(0)";
+    track.appendChild(track.children[0]);
+    isAnimating = false;
+  }, 500);
 }
 
 function moveTrackBackward() {
-    if (isAnimating) return;
-    isAnimating = true;
-    const cardWidth = getCardWidth();
-    
-    track.style.transition = "none";
-    track.insertBefore(
-        track.children[track.children.length - 1],
-        track.children[0]
-    );
-    track.style.transform = `translateX(-${cardWidth}px)`;
-    
+  if (isAnimating) return;
+  isAnimating = true;
+  const cardWidth = getCardWidth();
+
+  track.style.transition = "none";
+  track.insertBefore(
+    track.children[track.children.length - 1],
+    track.children[0]
+  );
+  track.style.transform = `translateX(-${cardWidth}px)`;
+
+  setTimeout(() => {
+    track.style.transition = "transform 0.5s ease";
+    track.style.transform = "translateX(0)";
     setTimeout(() => {
-        track.style.transition = "transform 0.5s ease";
-        track.style.transform = "translateX(0)";
-        setTimeout(() => {
-            isAnimating = false;
-        }, 500);
-    }, 0);
+      isAnimating = false;
+    }, 500);
+  }, 0);
 }
 
 // Auto slide functionality
 function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
-        if (!pauseAutoSlide && !isAnimating) {
-            moveTrackForward();
-        }
-    }, 3000);
+  autoSlideInterval = setInterval(() => {
+    if (!pauseAutoSlide && !isAnimating) {
+      moveTrackForward();
+    }
+  }, 3000);
 }
 
 function resetAutoSlideTimer() {
-    clearInterval(autoSlideInterval);
-    startAutoSlide();
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
 }
 
 // Event Listeners
 document.querySelector(".carousel-prev").addEventListener("click", () => {
-    resetAutoSlideTimer();
-    moveTrackBackward();
+  resetAutoSlideTimer();
+  moveTrackBackward();
 });
 
 document.querySelector(".carousel-next").addEventListener("click", () => {
-    resetAutoSlideTimer();
-    moveTrackForward();
+  resetAutoSlideTimer();
+  moveTrackForward();
 });
 
 track.addEventListener("mouseenter", () => (pauseAutoSlide = true));
@@ -289,13 +282,63 @@ track.addEventListener("mouseleave", () => (pauseAutoSlide = false));
 
 // Handle window resize
 let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        track.style.transition = "none";
-        track.style.transform = "translateX(0)";
-    }, 250);
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    track.style.transition = "none";
+    track.style.transform = "translateX(0)";
+  }, 250);
 });
 
 // Start the carousel
 startAutoSlide();
+
+/* 
+==========================================================
+? => Modal Functionality 
+========================================================== 
+
+ */
+
+//open modal
+function openModal(modalId) {
+  // document.body.style.overflow = "hidden";
+  const backdrop = document.getElementById(`${modalId}-backdrop`);
+  const container = document.getElementById(`${modalId}-container`);
+  const modalWrapper = container.querySelector(".modal-wrapper");
+
+  // Remove hiding class if present
+  backdrop.classList.remove("hiding");
+  container.classList.remove("hiding");
+
+  // Show modal
+  backdrop.classList.add("show");
+  container.classList.add("show");
+
+  // Add click event listener to the modal wrapper
+  modalWrapper.addEventListener("click", (event) => {
+    // If clicked element is the modal wrapper (the outer area)
+    if (event.target === modalWrapper) {
+      closeModal(modalId);
+    }
+  });
+}
+
+//close modal
+function closeModal(modalId) {
+  const backdrop = document.getElementById(`${modalId}-backdrop`);
+  const container = document.getElementById(`${modalId}-container`);
+
+  // Add hiding class for close animation
+  backdrop.classList.add("hiding");
+  container.classList.add("hiding");
+
+  // Remove show class after animation
+  setTimeout(() => {
+    backdrop.classList.remove("show");
+    container.classList.remove("show");
+    backdrop.classList.remove("hiding");
+    container.classList.remove("hiding");
+    document.body.style.overflow = "unset";
+  }, 300);
+}
