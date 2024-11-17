@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
-  const dropdownLinks = document.querySelectorAll(".nav-link");
   const toggleImg = document.getElementById("toggle_img");
-  console.log(toggleImg);
 
   // Toggle menu
   menuToggle.addEventListener("click", function () {
@@ -50,36 +48,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Handle dropdowns
-  dropdownLinks.forEach((link) => {
-    const chevron = link.querySelector(".chevron");
-    if (chevron) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const dropdownContent = this.nextElementSibling;
-        const isOpen = dropdownContent.classList.contains("active");
-
-        // Close all dropdowns
-        document.querySelectorAll(".dropdown-content").forEach((dropdown) => {
-          dropdown.classList.remove("active");
-          const chevron =
-            dropdown.previousElementSibling.querySelector(".chevron");
-          if (chevron) chevron.classList.remove("up");
-        });
-
-        // Toggle clicked dropdown
-        if (!isOpen) {
-          dropdownContent.classList.add("active");
-          chevron.classList.add("up");
-        }
-      });
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      navMenu.classList.remove("active");
+      toggleImg.src = "./images/more.svg";
     }
   });
 
-  // Close menu when clicking outside
-  document.addEventListener("click", function (e) {
-    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-      navMenu.classList.remove("active");
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.querySelector(".dropdown-arrow")) {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const dropdown = link.nextElementSibling;
+        const arrow = link.querySelector(".dropdown-arrow");
+
+        // Toggle arrow rotation
+        arrow.classList.toggle("active");
+
+        // Toggle dropdown
+        if (dropdown.style.maxHeight) {
+          dropdown.style.maxHeight = null;
+        } else {
+          dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+        }
+      });
     }
   });
 });
