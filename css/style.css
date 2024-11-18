@@ -2119,13 +2119,13 @@ aside {
 
 
 #getreport {
-    width: 800px;
+    width: 700px;
     background: #973752;
     padding: 30px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 8px #f3f3f3;
+    /* box-shadow: 0 0 8px #f3f3f3; */
     text-align: center;
     position: relative;
 }
