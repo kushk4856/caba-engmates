@@ -482,6 +482,13 @@
     .cta-pay-btn {
         padding: 15px 30px;
     }
+
+    .toggle_btn_form {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        right: -10px;
+    }
 }
 
 
@@ -617,6 +624,7 @@
 
     #getreport {
         width: 90%;
+        margin-top: 100px;
     }
 
     .custom-checkbox {
