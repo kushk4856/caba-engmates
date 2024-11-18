@@ -87,7 +87,7 @@ reusable code end
 .form_w_half {
     flex: 0 0 auto;
     width: 50%;
-    /* padding-inline: 10px; */
+    padding-inline: 10px;
     margin-bottom: 0;
 }
 
@@ -2132,6 +2132,7 @@ aside {
 
 .form_message_wrapper {
     width: 100%;
+    padding-inline: 10px;
 }
 
 .register_tag {

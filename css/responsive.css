@@ -597,7 +597,7 @@
     .form_w_half {
         flex: 0 0 auto;
         width: 100%;
-        /* padding-inline: 10px; */
+        padding-inline: 10px;
         margin-bottom: 1rem;
     }
 
@@ -619,12 +619,13 @@
 
     .form_block {
         width: 100%;
+        width: 100%;
         margin: 0 auto;
     }
 
     #getreport {
         width: 90%;
-        margin-block: 100px;
+        margin-block: 200px;
     }
 
     .custom-checkbox {
