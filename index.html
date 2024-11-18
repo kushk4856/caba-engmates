@@ -12,6 +12,106 @@
   </head>
 
   <body>
+
+
+<!-- ===============custom form popup============ -->
+
+<div class="form_modal  " id="form_modal">
+  <div class="form_modal_wrapper">
+    
+    <div class=" getreport text-center" id="getreport">
+      <div class="toggle_btn_form" id="toggle_btn_form">
+        <img src="./images/close.svg" width="15" height="15" alt="">
+      </div>
+      <h3 class="register_tag">Get Free Consultation</h3>
+      <div class="register_tag_msg">
+        Start your journey to a <span style="color: #f4c129; display: inline-flex;">
+          successful</span><br> & <span style="color: #f4c129; display: inline-flex;">
+          confident </span>
+        life
+      </div>
+      <div class="register_mobile_details">
+        <span class="date-and-time"><img loading="lazy" src="./images/calender.svg" alt="Date" width="100"
+            height="100">
+          3 Months </span>
+        <span class="date-and-time"><img loading="lazy" src="./images/clock.svg" alt="Date" width="100"
+            height="100">
+          1.5 Hrs / 5 Days
+        </span>
+        <span class="date-and-time"><img loading="lazy" src="./images/rupees.svg" alt="Date" width="100"
+            height="100">Free Consultation
+          Available!<!--  + GST --></span>
+      </div>
+      <form class="form_block" action="mail/mail.php" method="post" siq_id="autopick_4ucll3b2q1">
+        <div class="form_row  ">
+          <div class=" form_w_half mb-3 mb-sm-0">
+            <input type="text" class="form-control" placeholder="Name*" name="name" required=""
+              autocomplete="off">
+          </div>
+          <div class=" form_w_half mb-3 mb-sm-0">
+            <input type="text" class="form-control" placeholder=" Email*" name="email" required=""
+              autocomplete="off">
+          </div>
+        </div>
+    
+        <div class="form_row">
+          <div class=" form_w_half mb-3 mb-sm-0 phone_no">
+            <div class="phone-input-wrapper">
+              <div class="country-select-wrapper">
+                <select class="country-select" id="countryCode">
+                  <option value="+91">IN +91</option>
+    
+                  <!-- Add more country codes as needed -->
+                </select>
+              </div>
+              <div class="separator"></div>
+              <input type="tel" class="phone-input form-control User_Number" placeholder="Number*" maxlength="10"
+                pattern="[6-9][0-9]{9}" name="phone" required="" autocomplete="off" />
+            </div>
+            <!-- <input type="text" class="form-control User_Number" placeholder="Phone*" pattern="[6-9][0-9]{9}" name="phone" required=""> -->
+          </div>
+    
+          <div class="2 form_w_half mb-3  mb-sm-0">
+            <input type="text" class="form-control" placeholder="Your Location" name="city" required=""
+              autocomplete="off">
+          </div>
+        </div>
+    
+        <div class="form_row ">
+          <div class=" mb-3 form_message_wrapper  mb-sm-0">
+            <input type="text" class="form-control" placeholder="Share the problem you're facing" name="message"
+              required="" autocomplete="off">
+          </div>
+    
+        </div>
+    
+    
+        <div class="row user-agree-btn ">
+          <div class="col-12 d-flex">
+            <!-- <label class="checkbox-wrapper mx-3"> -->
+            <input type="checkbox" class="custom-checkbox" name="myCheckbox" checked="">
+            <!-- </label> -->
+            <p>I agree and accept the <span style="color: #F4C129; font-weight: 600; cursor: pointer;"
+                onclick="openModal('termsModal')">Terms &amp; Conditions</span></p>
+          </div>
+        </div>
+    
+        <button type="submit" name="submit" class="btn-get-started">Submit</button>
+    
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- 
+=================
+header 
+====================
+
+ -->
+
+
+
     <header>
       <nav class="navbar">
         <!-- <div class="svg_img">
@@ -76,7 +176,7 @@
                 </div>
           
                 <div class="nav-item">
-                  <a href="tel:+91 9311811011 " class=" nav-link scrollto register-now pay-btn">
+                  <a href="#" id="register-now" class=" nav-link scrollto register-now pay-btn">
                     Free Consultation</a>
                   
                 </div>
@@ -118,7 +218,7 @@
               <a href="#" class="nav-link">FAQs</a>
             </li>
             <li class="nav-item">
-              <a href="https://wa.me/919311811011" class=" scrollto register-now pay-btn">
+              <a href="#" id="register-now" class=" scrollto register-now pay-btn">
                 Free Consultation</a>
             </li>
             <!-- <li class="nav-item">

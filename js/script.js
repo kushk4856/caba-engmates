@@ -33,6 +33,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/*
+=================================================
+? => Pop up form Toggle js :----
+=================================================
+*/
+
+const formModal = document.getElementById("form_modal");
+const openFormModalBtn = document.querySelectorAll(".register-now");
+const formToggleBtn = document.getElementById("toggle_btn_form");
+
+console.log(openFormModalBtn);
+
+formToggleBtn.addEventListener("click", () => {
+  formModal.classList.remove("active");
+});
+
+openFormModalBtn.forEach((el) => {
+  el.addEventListener("click", () => {
+    formModal.classList.add("active");
+  });
+});
+
+/*
+=================================================
+? => Navbar Toggle js :----
+=================================================
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");

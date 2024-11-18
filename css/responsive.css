@@ -101,6 +101,10 @@
         margin-bottom: 55px;
     }
 
+    .center-area .address div li h5 {
+        font-weight: 400;
+    }
+
     .left-area {
         width: 100%;
     }
@@ -161,6 +165,45 @@
 
     .nav-item {
         border-bottom: 1px solid #eee;
+    }
+
+    .content_area {
+        padding-inline: 120px;
+        flex-direction: column-reverse;
+        margin-bottom: 55px;
+    }
+
+    .content_area h4 {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    #getreport {
+        width: 90%;
+    }
+
+    .register_mobile_details {
+        margin: 0 auto 30px auto;
+        width: 220px;
+        display: block;
+        text-align: left;
+    }
+
+    .register_mobile_details .date-and-time {
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1px;
+    }
+
+    .register_mobile_details .date-and-time img {
+        width: 23px;
+        height: 23px;
+        margin-right: 10px;
     }
 
 
@@ -398,10 +441,51 @@
     .placement_inner {
         padding-inline: 10px;
     }
+
+    .content_area {
+        padding-inline: 25px;
+        gap: 4px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .content_area .left-area {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .content_area .center-area {
+        order: 2;
+    }
+
+    .content_area .right-area {
+        order: 1;
+    }
+
+    .left-area .image {
+        width: 80%;
+    }
+
+    .form_block>div {
+        margin-bottom: 5px;
+    }
+
+    #hero .btn-get-started,
+    .cta-pay-btn {
+        padding: 15px 30px;
+    }
 }
 
 
-@media (max-width: 576px) {}
+
 
 @media (max-width: 425px) {
     .banner_sub_heading h2 {
@@ -499,6 +583,50 @@
     }
 
 
+    .center-area .address div li h5 {
+        font-weight: 400;
+    }
+
+    .form_w_half {
+        flex: 0 0 auto;
+        width: 100%;
+        /* padding-inline: 10px; */
+        margin-bottom: 1rem;
+    }
+
+    .register_tag {
+        font-size: 23px;
+    }
+
+    .register_tag_msg {
+        font-size: 17px;
+        padding: 15px 5px 10px 5px;
+    }
+
+    /* .register_mobile_details {
+        margin: 0 auto 30px auto;
+        width: 220px;
+        display: block;
+        text-align: left;
+    } */
+
+    .form_block {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #getreport {
+        width: 90%;
+    }
+
+    .custom-checkbox {
+        width: 24px;
+        margin-top: 3px;
+    }
+
+    .user-agree-btn p {
+        text-align: left;
+    }
 
 
 }
