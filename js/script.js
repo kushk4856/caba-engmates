@@ -132,7 +132,7 @@ function updateActiveCard() {
 // Handle card click with fade effect
 function handleCardClick(e) {
   if (isAnimating) return;
-
+  console.log(e);
   const clickedCard = e.currentTarget;
   const cards = Array.from(slider.children);
   const clickedIndex = cards.indexOf(clickedCard);
@@ -183,7 +183,7 @@ function moveSliderBackward() {
 
 // Add click event listeners to all cards
 function addCardListeners() {
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".card_small");
   cards.forEach((card) => {
     card.addEventListener("click", handleCardClick);
   });
