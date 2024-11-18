@@ -624,7 +624,7 @@
 
     #getreport {
         width: 90%;
-        margin-top: 100px;
+        margin-block: 100px;
     }
 
     .custom-checkbox {
