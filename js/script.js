@@ -43,7 +43,7 @@ const formModal = document.getElementById("form_modal");
 const openFormModalBtn = document.querySelectorAll(".register-now");
 const formToggleBtn = document.getElementById("toggle_btn_form");
 
-console.log(openFormModalBtn);
+// console.log(openFormModalBtn);
 
 formToggleBtn.addEventListener("click", () => {
   formModal.classList.remove("active");

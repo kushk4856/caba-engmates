@@ -607,7 +607,7 @@
 
     .register_tag_msg {
         font-size: 17px;
-        padding: 15px 5px 10px 5px;
+        padding: 10px 5px 10px 5px;
     }
 
     /* .register_mobile_details {
@@ -635,6 +635,11 @@
 
     .user-agree-btn p {
         text-align: left;
+    }
+
+    .form_block input[type=email],
+    .form_block input[type=text] {
+        font-size: 15px;
     }
 
 
