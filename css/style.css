@@ -454,7 +454,7 @@ hero section start
     font-size: 14px;
 }
 
-.phone-input {
+.phone-input_top {
     display: flex;
     /* gap: 8px; */
     background-color: #fff;
@@ -1229,7 +1229,7 @@ job section end
 }
 
 .card_small {
-    flex: 0 0 20;
+    flex: 0 0 20%;
     /* Change from 33.33% to 20% for 5 images */
     max-width: 20;
     /* Adjust max-width to 20% */
