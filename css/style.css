@@ -1202,7 +1202,7 @@ job section
 } */
 
 .card_content h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 0 10px;
     line-height: 1.3;
 }
@@ -1596,7 +1596,7 @@ job section end
     font-size: 20px;
     font-family: inherit;
     color: #444444;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .center-area .address div li p {
@@ -1607,7 +1607,7 @@ job section end
 }
 
 .center-area .address a {
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -1618,14 +1618,7 @@ job section end
     gap: 20px;
 }
 
-.content_area h4 {
-    color: #444444;
-    margin-top: 20px;
-    font-size: 24px;
-    font-family: inherit;
-    text-transform: uppercase;
-    font-weight: 500;
-}
+
 
 .phone_call,
 .email_id {
