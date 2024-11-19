@@ -135,7 +135,7 @@ reusable code end
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 
@@ -165,6 +165,8 @@ reusable code end
     display: flex;
     /* gap: 20px; */
     list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -619,7 +621,7 @@ hero section start
 .courses_inner .heading h3 {
     color: #4756B0;
     font-family: "Bai Jamjuree", Sans-serif;
-    font-size: 29px;
+    font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
     -webkit-text-stroke-width: 0px;
@@ -808,7 +810,7 @@ Guarantee Section
 }
 
 .placement_inner {
-    background-color: #f8f9fb;
+    background-color: #fff;
 }
 
 .placement_inner .main_content {
@@ -835,6 +837,9 @@ Guarantee Section
 
 .placement_inner .placement_right {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .placement_inner .para_block {
@@ -864,7 +869,9 @@ Guarantee Section
 .placement_button {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    padding-bottom: 20px;
 }
 
 .placement_button .free_btn:hover {
@@ -1060,11 +1067,13 @@ job section
 #job {
     margin-top: 40px;
     padding: 10px;
-
+    background: #f8f9fb;
+    padding-bottom: 60px;
 }
 
 .job_inner {
-    max-width: 1140px;
+    /* max-width: 1140px; */
+    max-width: 1250px;
     margin: auto;
 }
 
@@ -1094,12 +1103,27 @@ job section
     /* gap: 40px; */
 }
 
-.course-card {
+.carousel-slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* Space for navigation buttons */
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 38px;
+    transition: transform 0.5s ease;
+}
+
+/* .course-card {
     flex: 0 0 calc(33.3% - 25px);
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    /* margin: 20px; */
     width: 600px;
     margin: 20px auto;
     background-color: #fff;
@@ -1107,9 +1131,20 @@ job section
     position: relative;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
+} */
+
+.course-card {
+    flex: 0 0 calc(25% - 22px);
+    /* 25% width for 4 cards with gap consideration */
+    max-width: calc(25% - 30px);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    position: relative;
 }
 
-.course-card::after {
+/* .course-card::after {
     position: absolute;
     content: '';
     transform: translateX(-50%);
@@ -1118,34 +1153,71 @@ job section
     max-width: 50%;
     margin: auto;
     height: 4px;
-    background-color: #00d3ca;
+    background-color: #BC0037;
+} */
+
+.course-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 4px;
+    background-color: #BC0037;
 }
 
-.course-card img {
+/* .course-card img {
     max-width: 280px;
     height: 200px;
     border-radius: 5px;
-    /* height: 430px; */
-    /* border-radius: 20px; */
+   
 
+} */
+
+.course-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 5px;
 }
 
-.course-card .card_content {
+/* .course-card .card_content {
     margin-top: 40px;
-    /* text-align: left; */
+   
+} */
+
+
+.card_content {
+    padding: 15px 0;
+    text-align: center;
 }
 
-.course-card h2 {
-    font-size: 20px;
+/* .course-card h2 {
+    font-size: 22px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-wrap: nowrap;
     font-weight: 700;
+} */
+
+.card_content h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 1.3;
 }
 
-.course-card p {
+/* .course-card p {
     margin: 5px 0;
+} */
+
+.card_content p {
+    margin: 5px 0;
+    font-size: 14px;
 }
+
+
+
 
 
 
@@ -1295,11 +1367,11 @@ job section end
     padding-inline: 23px;
 }
 
-.carousel-track {
+/* .carousel-track {
     display: flex;
     gap: 38px;
     transition: transform 0.5s ease;
-}
+} */
 
 
 
@@ -1453,7 +1525,7 @@ job section end
     width: 100%;
     background-color: #F2eFea;
     display: flex;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     justify-content: space-evenly;
     gap: 40px;
 }
