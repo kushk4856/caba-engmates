@@ -419,8 +419,8 @@ hero section start
 }
 
 .form-header {
-    background-color: #ffb800;
-    color: #000000;
+    background-color: #BC0037;
+    color: #fff;
     padding: 12px 20px;
     border-top-right-radius: 26px;
     border-top-left-radius: 26px;
@@ -491,17 +491,18 @@ hero section start
 .hero_inner .submit-btn {
     padding: 12px;
     padding-inline: 36px;
-    background-color: #ffb800;
+    background-color: #BC0037;
     border: none;
     border-radius: 18px;
-    color: #000000;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
+    transition: all .3s ease-in-out;
 }
 
 .submit-btn:hover {
-    background-color: #ffa500;
+    background-color: #b82a52;
 }
 
 
@@ -1978,7 +1979,7 @@ aside {
 
 .modal-title {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #C77201;
     line-height: 1.5;
     margin-bottom: 0;
@@ -2009,7 +2010,7 @@ aside {
 
 .section h3 {
     font-size: .875rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #C77201;
     margin-bottom: .5rem
 }
