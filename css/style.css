@@ -130,12 +130,12 @@ reusable code end
 }
 
 .nav-container {
-    /* max-width: 1140px; */
+    max-width: 1370px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 18px;
 }
 
 
@@ -349,7 +349,7 @@ hero section start
 .banner_block {
     width: 100%;
     /* max-width: 986px; */
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
 
     background-color: transparent;
@@ -528,7 +528,7 @@ hero section start
 }
 
 .about_inner {
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
     /* gap: 4px; */
     gap: 64px;
@@ -610,7 +610,7 @@ hero section start
 }
 
 .courses_inner {
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
     padding: 10px;
 }
@@ -633,7 +633,7 @@ hero section start
 }
 
 .about_courses {
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -720,7 +720,7 @@ Guarantee Section
 }
 
 .guarantee_inner {
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -796,7 +796,7 @@ Guarantee Section
 
 
 .top_heading {
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
 }
 
@@ -815,7 +815,7 @@ Guarantee Section
 }
 
 .placement_inner .main_content {
-    max-width: 1140px;
+    max-width: 1370px;
     margin: auto;
     padding: 10px;
     min-height: 526px;
@@ -1073,8 +1073,9 @@ job section
 }
 
 .job_inner {
-    /* max-width: 1140px; */
-    max-width: 1250px;
+    max-width: 1370px; 
+
+  
     margin: auto;
 }
 
@@ -1807,7 +1808,7 @@ aside {
 /* -----------------swiper whatsApp section -------  */
 
 .white_block {
-    background: #6A4ADC;
+    background: #F2eFea;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -1818,7 +1819,7 @@ aside {
 
 
 .brown_heading {
-    color: #ffcc35;
+    color: #BC0037;
     font-size: 40px;
     margin-bottom: 30px;
     font-weight: 600;
@@ -1842,17 +1843,17 @@ aside {
     width: 100%;
     height: 35em;
     display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
     align-items: center;
 }
 
 .card {
     width: fit-content;
-    height: 90%;
+    height: 110%;
     background-color: #00000000;
     border-radius: 2em;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-    /* padding: 2em 1em; */
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1879,30 +1880,24 @@ aside {
 .swiper-button-prev,
 .swiper-button-next {
     background-color: transparent;
-    /* Make the background transparent */
     border: none;
     font-size: 2rem;
     color: #fcae36;
-    /* Set icon color to #fcae36 */
     cursor: pointer;
 }
 
 .swiper-button-prev {
     left: 10px;
-    /* Position the left button */
 }
 
 .swiper-button-next {
     right: 10px;
-    /* Position the right button */
 }
 
-/* Adjust hover effect */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
     color: #fcae36;
     transform: scale(1.2);
-    /* Optional: Add some scaling effect on hover */
 }
 
 .swiper-button-prev:after,
