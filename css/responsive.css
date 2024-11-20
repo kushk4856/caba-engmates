@@ -417,6 +417,10 @@
         padding-inline: 80px;
     }
 
+    .placement_button {
+        justify-content: center;
+    }
+
     /* -----------footer -------------  */
     .footer_inner {
         flex-direction: column;
