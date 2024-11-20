@@ -325,8 +325,10 @@ hero section start
 }
 
 .hero_inner {
-    background-image: url('../images/hero-bg.jpg');
-    background-position: top center;
+    /* background-image: url('../images/engmates-four.webp');
+    background-position: top center; */
+    background: url(../images/engmates-bg.webp) no-repeat center center / cover;
+    background-position: 0px -73px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -530,14 +532,8 @@ hero section start
 .about_inner {
     max-width: 1370px;
     margin: auto;
-    /* gap: 4px; */
-    gap: 64px;
-    /* as per engmates */
-    /* align-items: self-start; */
-    /* as per engmates */
-
-
-}
+    gap: 0px;
+  }
 
 .about_left_block {
     width: 43%;
@@ -566,7 +562,7 @@ hero section start
 
 .about_right_block h3 {
     font-family: "Open Sans Hebrew", Sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -657,14 +653,15 @@ hero section start
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
-
+   font-weight: 500;
 }
 
 .box_wrapper .contents .text {
-    color: #000000C2;
+    color: #3f3f3f;
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 300;
+    font-weight: 400;
 }
 
 .about_courses .right_content {
@@ -840,7 +837,8 @@ Guarantee Section
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    margin-bottom: 10px;
 }
 
 .placement_inner .para_block {
@@ -855,14 +853,14 @@ Guarantee Section
 }
 
 .placement_inner .para h3 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .placement_inner .para p {
-    color: #000000C2;
+    color: #3f3f3f;
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8em;
     margin-block-end: .9rem;
 }
@@ -1067,7 +1065,7 @@ job section
 
 #job {
     margin-top: 40px;
-    padding: 10px;
+    padding: 50px;
     background: #f8f9fb;
     padding-bottom: 60px;
 }
