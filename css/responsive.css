@@ -307,6 +307,10 @@
         letter-spacing: 1px;
     }
 
+    .about_courses .center_content {
+        padding: 10px;
+    }
+
     .about_right_block h4 {
         text-align: center;
     }

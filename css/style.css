@@ -679,7 +679,13 @@ hero section start
 .about_courses .center_content {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 300px;
     width: 33.3%;
+    background-image: url('../images/Untitled-design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
 
 }
 
