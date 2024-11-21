@@ -265,9 +265,9 @@
         order: 1;
     }
 
-    .course-card img {
-        /* width: 240px; */
-    }
+    /* .course-card img {
+        width: 240px;
+    } */
 
     .banner_block {
         flex-direction: column;

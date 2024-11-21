@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-OpenSans) !important;
 
@@ -220,7 +224,7 @@ reusable code end
     background: #BC0037;
     padding: 12px 30px;
     border-radius: 50px;
-    margin-left: 40px;
+    margin-left: 19px;
     color: #fff;
     font-size: 17px;
     font-weight: 600;
@@ -533,7 +537,7 @@ hero section start
     max-width: 1370px;
     margin: auto;
     gap: 0px;
-  }
+}
 
 .about_left_block {
     width: 43%;
@@ -653,7 +657,7 @@ hero section start
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
-   font-weight: 500;
+    font-weight: 500;
 }
 
 .box_wrapper .contents .text {
@@ -1071,9 +1075,9 @@ job section
 }
 
 .job_inner {
-    max-width: 1370px; 
+    max-width: 1370px;
 
-  
+
     margin: auto;
 }
 

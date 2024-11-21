@@ -2,7 +2,7 @@
 if(isset($_REQUEST['submit_new'])) 
 {
 // EDIT THE 2 LINES BELOW AS REQUIRED
-$email_to = "engmates.tilaknagar@gmail.com, rk.abhishekbakshi@gmail.com ";
+$email_to = "kushk4998@gmail.com";
 $email_subject = "Query from Basic English Speaking Course Long LP (Footer)";
 // validation expected data exists
 if(!isset($_POST['mbl_no']))
