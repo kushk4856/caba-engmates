@@ -192,7 +192,7 @@ reusable code end
     top: 100%;
     left: 0;
     background: #e9e8e3;
-    min-width: 200px;
+    min-width: 250px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1000;
@@ -613,6 +613,7 @@ hero section start
     max-width: 1370px;
     margin: auto;
     padding: 10px;
+    padding-bottom: 50px;
 }
 
 .courses_inner .heading {
@@ -883,13 +884,13 @@ Guarantee Section
     padding-bottom: 20px;
 }
 
-.placement_button .free_btn:hover {
+/* .placement_button .free_btn:hover {
     background-color: #4323aa;
 }
 
 .placement_button .call_btn:hover {
     background-color: #d6216e;
-}
+} */
 
 
 .placement_inner .button-container {
@@ -900,8 +901,15 @@ Guarantee Section
     height: 40px;
     border-radius: 25px;
     overflow: hidden;
-    background: linear-gradient(90deg, #562dd4 0%, #ff3366 100%);
+    /* background: linear-gradient(90deg, #562dd4 0%, #ff3366 100%); */
+    background: #BC0037;
     position: relative;
+    margin-left: 64px;
+    transition: all .3s ease-in-out;
+}
+
+.placement_inner .button-container:hover {
+    background: #b82a52;
 }
 
 .placement_inner .button {
@@ -910,7 +918,7 @@ Guarantee Section
     border: none;
     background: transparent;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     padding: 0 20px;

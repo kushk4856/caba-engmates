@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 */
 
 const formModal = document.getElementById("form_modal");
-const openFormModalBtn = document.querySelectorAll(".register-now");
+const openFormModalBtn = document.querySelectorAll(".form_popup");
 const formToggleBtn = document.getElementById("toggle_btn_form");
 
 // console.log(openFormModalBtn);
@@ -60,20 +60,18 @@ openFormModalBtn.forEach((el) => {
 ? => Navbar Toggle js :----
 =================================================
 */
-
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
+  const dropdown = document.querySelector(".dropdown-content");
   const navMenu = document.querySelector(".nav-menu");
   const toggleImg = document.getElementById("toggle_img");
 
   // Toggle menu
   menuToggle.addEventListener("click", function () {
     navMenu.classList.toggle("active");
-    if (navMenu.classList.contains("active")) {
-      toggleImg.src = "./images/close.svg";
-    } else {
-      toggleImg.src = "./images/more.svg";
-    }
+    toggleImg.src = navMenu.classList.contains("active")
+      ? "./images/close.svg"
+      : "./images/more.svg";
   });
 
   // Close menu when clicking outside
@@ -84,28 +82,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Handle clicks on nav links
   document.querySelectorAll(".nav-link").forEach((link) => {
-    if (link.querySelector(".dropdown-arrow")) {
-      link.addEventListener("click", (e) => {
+    const hasDropdown =
+      !!link.nextElementSibling &&
+      link.nextElementSibling.classList.contains("dropdown-content");
+
+    link.addEventListener("click", (e) => {
+      if (hasDropdown) {
+        // Prevent navbar from closing if the link has a dropdown
         e.preventDefault();
 
         const dropdown = link.nextElementSibling;
         const arrow = link.querySelector(".dropdown-arrow");
 
-        // Toggle arrow rotation
+        // Toggle dropdown visibility
         arrow.classList.toggle("active");
+        dropdown.style.maxHeight = dropdown.style.maxHeight
+          ? null
+          : dropdown.scrollHeight + "px";
+      } else {
+        // Close the navbar for normal links
+        navMenu.classList.remove("active");
+        toggleImg.src = "./images/more.svg";
+      }
+    });
+  });
 
-        // Toggle dropdown
-        if (dropdown.style.maxHeight) {
-          dropdown.style.maxHeight = null;
-        } else {
-          dropdown.style.maxHeight = dropdown.scrollHeight + "px";
-        }
-      });
-    }
+  // Close menu when a dropdown item is clicked
+  document.querySelectorAll(".dropdown-content a").forEach((dropdownItem) => {
+    dropdownItem.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      toggleImg.src = "./images/more.svg";
+      dropdown.style.maxHeight = null;
+    });
   });
 });
-
 // ----------navbar end ---------
 
 const slider = document.getElementById("slider");
