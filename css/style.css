@@ -406,7 +406,7 @@ hero section start
     font-weight: 800;
     line-height: 1;
     width: 100%;
-    margin-top: 22px;
+    margin-top: 90px;
 
     text-transform: uppercase;
     text-shadow: 11px 11px 10px rgba(0, 0, 0, 0);
@@ -865,6 +865,7 @@ Guarantee Section
 
 .placement_inner .para h3 {
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .placement_inner .para p {
@@ -872,7 +873,7 @@ Guarantee Section
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.8em;
+    line-height: 1.5em;
     margin-block-end: .9rem;
 }
 
@@ -918,7 +919,7 @@ Guarantee Section
     border: none;
     background: transparent;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     padding: 0 20px;
@@ -1561,8 +1562,8 @@ job section end
 .left-area p {
     color: #707070;
     font-size: 16px;
-    font-family: inherit;
-    text-align: justify;
+    /* font-family: inherit; */
+    /* text-align: justify; */
     margin-left: 0px;
     margin-top: 10px;
     margin-top: 20px;
@@ -1806,7 +1807,9 @@ aside {
 }
 
 .footer-modals {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    align-items: center;
+
 }
 
 .close-icon img {
