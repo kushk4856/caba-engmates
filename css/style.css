@@ -453,14 +453,14 @@ hero section start
     width: 100%;
 }
 
-.form-control {
+/* .form-control {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 14px;
-}
+} */
 
 .phone-input_top {
     display: flex;
@@ -509,6 +509,10 @@ hero section start
 
 .submit-btn:hover {
     background-color: #b82a52;
+}
+
+.select_option {
+    color: light-dark(graytext, rgb(170, 170, 170)) !important;
 }
 
 
